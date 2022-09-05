@@ -7,134 +7,173 @@
 }
 
 body {
-display: flex;
-justify-content: center;
-align-items: center;
-width: 100%;
-min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
 }
 
 .image1 {
-position: absolute;
-top: 0;
-right: 0;
-left: 0;
-width: 100%;
-object-fit: contain;
-z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    object-fit: contain;
+    z-index: -1;
 }
 
 .image2 {
-position: absolute;
-right: 0;
-left: 0;
-width: 100%;
-align-content: baseline;
-height: 496px;
-object-fit: cover;
-transform: scaleX(-1) scaleY(-1);
-z-index: 0;
-filter: drop-shadow( 4px 4px 30px rgba(182, 199, 255, 0.713));
+    position: absolute;
+    right: 0;
+    left: 0;
+    width: 100%;
+    align-content: baseline;
+    height: 496px;
+    object-fit: cover;
+    transform: scaleX(-1) scaleY(-1);
+    z-index: 0;
+    filter: drop-shadow( 4px 4px 30px rgba(182, 199, 255, 0.713));
 }
 
 .image3 {
-position: absolute;
-right: 0;
-left: 0;
-bottom: 0;
-width: 100%;
-transform: scaleX(-1) scaleY(-1);
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    transform: scaleX(-1) scaleY(-1);
 }
 
 main {
-display: flex;
-flex-direction: column;
-background-color: white;
-width: 450px;
-height: 700px;
-border: none;
-border-radius: 20px;
-z-index: 100;
-overflow: hidden;
-box-shadow: ;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    min-width: 325px;
+    width: 31vw;
+    min-height: 575px;
+    height: 55vw;
+    max-height: 675px;
+    border: none;
+    border-radius: 20px;
+    z-index: 100;
+    overflow: hidden;
 }
 
 main .description {
-display: flex;
-flex-direction: column;
-align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 main .description .title {
-font-size: 28px;
-margin-top: 48px;
+    font-size: 28px;
+    margin-top: 48px;
 }
 
 main .description .text-content {
-width: 300px;
-color: hsl(224, 23%, 55%);
-line-height: 1.6;
-text-align: center;
-margin-top: 16px;
+    max-width: 300px;
+    width: 83%;
+    color: hsl(224, 23%, 55%);
+    line-height: 1.6;
+    text-align: center;
+    margin-top: 16px;
 }
 
 main .small-card {
-display: flex;
-flex-direction: row;
-width: 350px;
-height: 100px;
-background-color: hsl(225, 100%, 98%);
-border-radius: 12px;
-margin-top: 20px;
-align-items: center;
-
+    display: flex;
+    flex-direction: row;
+    max-width: 350px;
+    width: 86%;
+    max-height: 130px;
+    height: 20%;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 12px;
+    margin-top: 20px;
+    align-items: center;
 }
 
 main .small-card img {
-margin: 22px;
+    margin: 22px;
 }
 
 main .small-card .plan {
-flex: 1;
+    flex: 1;
 }
 
 main .small-card .plan h2 {
-margin-bottom: 4px;
-font-weight: 900;
+    margin-bottom: 4px;
+    font-weight: 900;
 }
 
 main .description .small-card .plan p {
-color: hsl(224, 23%, 55%);
+    color: hsl(224, 23%, 55%);
 }
 
 main .description .small-card .change {
-font-size: 14px;
-color: hsl(245, 75%, 52%);
-text-decoration: underline;
-font-weight: 900;
-padding-right: 24px;
+    font-size: 14px;
+    color: hsl(245, 75%, 52%);
+    text-decoration: underline;
+    font-weight: 900;
+    padding-right: 24px;
+}
+
+main .description .small-card .change:hover {
+    text-decoration: none;
+    cursor: pointer;
 }
 
 main .description .payment {
-font-size: 16px;
-width: 350px;
-height: 50px;
-color: white;
-background-color: hsl(245, 75%, 52%);
-border: none;
-border-radius: 10px;
-margin-top: 32px;
-box-shadow: 0px 20px 20px hsla(245, 75%, 52%, 0.337);
+    font-size: 16px;
+    max-width: 350px;
+    width: 86%;
+    height: 50px;
+    color: white;
+    background-color: hsl(245, 75%, 52%);
+    border: none;
+    border-radius: 10px;
+    margin-top: 36px;
+    box-shadow: 0px 20px 20px hsla(245, 75%, 52%, 0.337);
+}
+
+main .description .payment:hover {
+    background-color: hsla(245, 75%, 52%, 0.649)
 }
 
 main .description .cancel {
-font-size: 14px;
-font-weight: 900;
-color: hsl(224, 23%, 55%);
-background: none;
-border: none;
-border-radius: 10px;
-margin-top: 32px;
+    font-size: 14px;
+    font-weight: 900;
+    color: hsl(224, 23%, 55%);
+    background: none;
+    border: none;
+    border-radius: 10px;
+    margin-top: 32px;
+}
+
+main .description .cancel:hover {
+    color: black;
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (max-width: 1100px) {
+    main {
+        height: 48vh;
+    }
+    main .description .small-card .plan h2, 
+    main .description .small-card .plan p,
+    main .description .small-card .change {
+        font-size: 14px;
+    }
+
+    main .description .cancel {
+        margin-top: 24px;
+    }
+
+    main .description .payment {
+        margin-top: 24px;
+    }
+
+     
+}
